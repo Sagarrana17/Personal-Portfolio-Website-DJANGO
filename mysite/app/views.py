@@ -14,7 +14,7 @@ class index(View):
         skillss = Skills.objects.all()
         qualifications = Qualification.objects.all()
         return render(request, 'index.html',
-        {'homes': homes, 'abouts': abouts, 'skillss': skillss, 'qualifications': qualifications })
+        {'homes': homes, 'abouts': abouts, 'skillss': skillss, 'qualifications': qualifications})
     
 
 

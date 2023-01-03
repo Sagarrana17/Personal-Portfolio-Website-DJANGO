@@ -48,7 +48,10 @@ class Qualification(models.Model):
     qualification_title_W = models.CharField(max_length=100)
     qualification_subtitle_W = models.CharField(max_length=100)
     qualification_calender_W = models.CharField(max_length=100)
+   
     
+    
+   
     def __str__(self):
             return str(self.id)
         

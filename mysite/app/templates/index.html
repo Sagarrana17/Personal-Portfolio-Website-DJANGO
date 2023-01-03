@@ -369,23 +369,31 @@
                             <!--==================== QUALIFICATION CONTENT 1====================-->
                             <div class="qualification_content qualification_active" data-content id="education">
                                 <!--==================== QUALIFICATION 1====================-->
-                                
+                                {% for q in qualifications %}
                                 <div class="qualification_data">
                                     <div>
-                                        <h3 class="qualification_title">{{q.qualification_subtitle_E}}</h3>
-                                        <span class="qualification_subtitle">IICL</span>
+                                        
+                                        <div>
+                                            <span class="qualification_rounder"></span>
+                                            <span class="qualification_line"></span>
+                                        </div>
+                                        
+                                        <h3 class="qualification_title">{{q.qualification_title_E}}</h3>
+                                        <span class="qualification_subtitle">{{q.qualification_subtitle_E}}</span>
                                         <div class="qualification_calender">
                                             <i class="uil uil-calendar-alt"></i>
-                                            2019-2022
+                                            {{q.qualification_calender_E}}
                                         </div>
+                                        
                                     </div>
 
                                     <div>
                                         <span class="qualification_rounder"></span>
                                         <span class="qualification_line"></span>
-                                    </div>
+                                    </div> 
+                                    
                                 </div>
-                                
+                                {% endfor %} 
                                    <!--==================== QUALIFICATION 2====================-->
                                    <div class="qualification_data">
                                     <div></div>
@@ -401,10 +409,8 @@
                                             2019-2022
                                         </div>
                                     </div>
-
-                                    
                                 </div>
-                                   <!--==================== QUALIFICATION 3====================-->
+                                   <!--==================== QUALIFICATION 3====================
                                    <div class="qualification_data">
                                     <div>
                                         <h3 class="qualification_title">Computer Enginner</h3>
@@ -419,13 +425,13 @@
                                         <span class="qualification_rounder"></span>
                                         <span class="qualification_line"></span>
                                     </div>
-                                </div>
-                                   <!--==================== QUALIFICATION 4====================--->
+                                </div>-->
+                                   <!--==================== QUALIFICATION 4====================
                                    <div class="qualification_data">
                                     <div></div>
                                     <div>
                                         <span class="qualification_rounder"></span>
-                                        <!--<span class="qualification_line"></span>--> 
+                                        <span class="qualification_line"></span>
                                     </div>
                                     <div>
                                         <h3 class="qualification_title">Computer Enginner</h3>
@@ -434,11 +440,11 @@
                                             <i class="uil uil-calendar-alt"></i>
                                             2019-2022
                                         </div>
-                                    </div>
+                                    </div> 
 
                                   
                                 </div>
-                            </div>
+                            </div>--->
 
                               <!--==================== QUALIFICATION CONTENT 2====================-->
                               <div class="qualification_content" data-content id="work">
@@ -462,8 +468,10 @@
                                    <div class="qualification_data">
                                     <div></div>
                                     <div>
+                                        
                                         <span class="qualification_rounder"></span>
                                         <span class="qualification_line"></span>
+                                       
                                     </div>
                                     <div>
                                         <h3 class="qualification_title">Computer Enginner</h3>

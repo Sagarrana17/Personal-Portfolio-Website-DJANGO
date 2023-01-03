@@ -553,6 +553,7 @@ img {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
+
 .qualification_rounder{
     display: inline-block;
     width: 13px;
